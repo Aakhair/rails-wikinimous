@@ -1,0 +1,8 @@
+<h1>Quotes</h1>
+<p>--------</p>
+
+<% @articles.each do |article| %>
+  <h3><%= article.title %><h3>
+  <p><%= article.content %></p>
+  <p> - - - - - </p>
+<% end %>

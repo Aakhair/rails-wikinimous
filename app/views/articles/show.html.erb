@@ -1,0 +1,11 @@
+<h1> more deatails</h1>
+
+ <p> title : <%= @article.title %></p>
+ <p> the quote : <%= @article.content %></p>
+ <p>created at : <%= @article.created_at  %></p>
+ <p>upDated at : <%= @article.updated_at  %></p>
+
+ <%= link_to 'Delete',
+    article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
